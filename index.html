@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: url("img.jpg");
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        width: 25%;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        font-size: 20px;
+        padding: 20px;
+        background-color: #e1dfdb;
+        border: 2px solid #3484A8;
+    }
+    input {
+        font-size: 22px;
+        padding: 3px 0;
+        padding-left: 10px;
+        /* text-align: center; */
+        letter-spacing: 1px;
+    }
+    select {
+        font-size: 22px;
+        width: 200px;
+    }
+    .borderStyle{
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+    #submit{
+        padding: 0px 10px;
+    }
+</style>
+<body background="img.jpg" width="100%">
+    <div class="container">
+        <div class="box" style="text-align: center;"> 
+            <h1 style="margin-bottom: 25px;"> Enter your detail</h1>
+            <form>
+            <input class="borderStyle" type="text" name="name" placeholder="Name">
+            <br><br>
+            <input class="borderStyle" type="text" name="Admission" placeholder="Email">
+            
+            <br><br>
+            <select class="borderStyle" id="select" name="select">
+                <option value="Default" selected disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <input class="borderStyle" id="submit" type="submit" name="Register">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
